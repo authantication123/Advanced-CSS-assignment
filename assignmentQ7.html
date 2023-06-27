@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            border: solid;
+            height: 400px;
+            width: 400px;
+            transform: translate(400px, 100px);
+        }
+        .bton{
+            height: 50px;
+            width: 250px;
+            background-image: linear-gradient(to right, #7575c5, #3b3bc5);
+            border-radius: 10px;
+            border: 0px;
+            margin-top: 180px;
+            margin-left: 68px;
+            color: white;
+            animation: move 1s ease-in-out 500ms 100 alternate;
+        }
+        @keyframes move{
+            from {
+                margin-top: 160px;
+            }
+            to {
+                bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="bton"><span>Click Me To Visit PW Skills</span></button>
+    </div>
+</body>
+</html>
